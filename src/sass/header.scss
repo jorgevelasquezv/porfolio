@@ -1,0 +1,49 @@
+.title-content {
+    position: relative;
+    z-index: 1;
+    max-width: 25%;
+    .title {
+        // color: #fff;
+        margin: 0;
+        font-family: 'Bungee', cursive;
+        font-weight: 30;
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        position: relative;
+        :hover {
+        }
+        ::before {
+            font-family: 'La Belle Aurore', cursive;
+            color: #515152;
+            font-size: 1.8rem;
+            position: absolute;
+            margin-top: -5rem;
+            left: -1.5rem;
+        }
+        ::after {
+            content: '';
+            font-family: 'La Belle Aurore', cursive;
+            color: #515152;
+            font-size: 1.8rem;
+            position: absolute;
+            margin-top: 3.8rem;
+            margin-left: 2rem;
+        }
+        .blast {
+            animation-duration: 3s;
+            animation-name: slidein;
+        }
+    }
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}

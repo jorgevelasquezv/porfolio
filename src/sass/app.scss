@@ -1,0 +1,24 @@
+@import './header.scss';
+
+.bd-layout {
+    background-color: var(--bs-dark);
+    display: grid;
+    grid-template-areas: 'sidebar main';
+    grid-template-columns: 0.5fr 3fr;
+    .bd-main {
+        background-color: #fff8f0;
+        width: 100%;
+        display: grid;
+        gap: inherit;
+        grid-template-areas:
+            'intro'
+            'toc'
+            'content';
+        grid-template-rows: auto auto 1fr;
+        padding: 15px;
+    }
+    @include lt-sm {
+        grid-template-columns: none;
+        grid-template-areas: none;
+    }
+}

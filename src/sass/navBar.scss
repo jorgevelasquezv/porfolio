@@ -1,0 +1,11 @@
+.navbar {
+    display: none;
+    .navbar-toggler {
+        border-radius: 50%;
+    }
+    @include lt-sm {
+        display: block;
+        position: sticky;
+        top: 0px;
+    }
+}
