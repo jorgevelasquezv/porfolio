@@ -1,22 +1,21 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 export const Header = () => {
     
     const title = ['HOLA, ', 'SOY', 'JORGE VELASQUEZ', 'DESAROLLADOR WEB'];
-    const saludo = 'HOLA, ';
 
     return (
-        <header className="title-content">
-            <h1 className="title">
-                {title.map((charts) => (
-                    <>
+        <header className="header">
+            <h1 className="header__title">
+                {title.map((charts, i) => (
+                    <Fragment key={i}>
                         {charts.split("").map((chart, index) => (
-                            <span className="blast" key={index}>
+                            <span className="header__blast" key={index}>
                                 {chart}
                             </span>
                         ))}
                         <br />
-                    </>
+                    </Fragment>
                 ))}
             </h1>
         </header>

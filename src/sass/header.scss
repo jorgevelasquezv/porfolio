@@ -1,41 +1,53 @@
-.title-content {
+.header {
     position: relative;
     z-index: 1;
     max-width: 100%;
-    .title {
-        margin: 0;
-        font-family: "Bungee", cursive;
-        font-weight: 30;
-        font-size: 3.5rem;
-        line-height: 5rem;
-        position: relative;
-        cursor: pointer;
-        animation-duration: 3s;
-        animation-name: slidein;
-        span:hover {
-            animation-duration: 0.5s;
-            animation-name: text_color;
-        }
-        @include lt-sm {
-            font-size: 1.5rem;
-            line-height: 2.5rem;
-        }
+}
+
+.header__title {
+    margin: 0;
+    // font-family: 'Bungee', cursive;
+    font-weight: 30;
+    font-size: 3rem;
+    line-height: 7.7rem;
+    position: relative;
+    cursor: pointer;
+    animation-duration: 3s;
+    animation-name: slidein;
+    @include lt-sm {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
     }
+}
+
+.header__blast {
+    // background-color: rgb(153, 37, 37);
+    position: relative;
+    height: 10px !important;
+}
+
+.header__blast:hover {
+    animation-delay: 0.3s;
+    animation-duration: 0.5s;
+    animation-name: text_color;
+    color: $primary;
+    // position: absolute;
+
 }
 
 @keyframes slidein {
     0% {
         margin-left: 100%;
         width: 300%;
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         opacity: 0.2;
     }
     25% {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
         opacity: 0.4;
     }
     75% {
-        font-size: 3.2rem;
+        font-size: 3rem;
         opacity: 0.8;
     }
     100% {
@@ -48,15 +60,12 @@
 
 @keyframes text_color {
     0% {
-        color: $primary;
-        transform: scale(0.2);
         font-size: 2.6rem;
     }
     75% {
         font-size: 3.1rem;
     }
     100% {
-        color: #000;
         font-size: 3.5rem;
     }
 }

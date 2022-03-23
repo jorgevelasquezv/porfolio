@@ -1,4 +1,4 @@
-.bd-sidebar {
+.sidebar {
     text-align: center;
     background-color: var(--bs-dark);
     grid-area: sidebar;
@@ -7,11 +7,21 @@
     right: 0;
     height: calc(100vh - 7rem);
     overflow-y: auto;
-    .navbar-nav li a {
-        text-decoration: none;
-        color: $white;
-    }
+
     @include lt-sm {
         display: none;
     }
+}
+
+.sidebar__link {
+    text-decoration: none;
+    color: $white;
+    font-family: 'Bungee', cursive;
+    font-size: 1.5rem;
+    line-height: 5.5rem;
+}
+
+.sidebar__link:hover{
+    text-decoration: none;
+    color: $primary;
 }
