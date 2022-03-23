@@ -6,33 +6,30 @@
 
 .header__title {
     margin: 0;
-    // font-family: 'Bungee', cursive;
-    font-weight: 30;
-    font-size: 3rem;
-    line-height: 7.7rem;
+    font-family: 'Chango', cursive;
+    font-size: 2.5rem;
+    line-height: 3.15rem;
     position: relative;
-    cursor: pointer;
+    // cursor: pointer;
     animation-duration: 3s;
     animation-name: slidein;
     @include lt-sm {
-        font-size: 1.5rem;
-        line-height: 2.5rem;
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        animation-name: slidein-lt-sm;
     }
 }
 
 .header__blast {
     // background-color: rgb(153, 37, 37);
     position: relative;
-    height: 10px !important;
 }
 
 .header__blast:hover {
     animation-delay: 0.3s;
-    animation-duration: 0.5s;
+    animation-duration: 0.3s;
     animation-name: text_color;
     color: $primary;
-    // position: absolute;
-
 }
 
 @keyframes slidein {
@@ -43,29 +40,52 @@
         opacity: 0.2;
     }
     25% {
-        font-size: 2.5rem;
+        font-size: 2rem;
         opacity: 0.4;
     }
     75% {
-        font-size: 3rem;
+        font-size: 2.2rem;
         opacity: 0.8;
     }
     100% {
         margin-left: 0%;
         width: 100%;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
+        opacity: 1;
+    }
+}
+
+@keyframes slidein-lt-sm {
+    0% {
+        margin-left: 100%;
+        width: 300%;
+        font-size: 0.5rem;
+        opacity: 0.2;
+    }
+    25% {
+        font-size: 1rem;
+        opacity: 0.4;
+    }
+    75% {
+        font-size: 1.4rem;
+        opacity: 0.8;
+    }
+    100% {
+        margin-left: 0%;
+        width: 100%;
+        font-size: 1.6rem;
         opacity: 1;
     }
 }
 
 @keyframes text_color {
     0% {
-        font-size: 2.6rem;
+        font-size: 2rem;
     }
     75% {
-        font-size: 3.1rem;
+        font-size: 2.2rem;
     }
     100% {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 }

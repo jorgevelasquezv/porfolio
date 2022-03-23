@@ -7,9 +7,9 @@ function App() {
     return (
         <>
             <NavBar />
-            <div className="bd-layout">
+            <div className="layout">
                 <SlideBar />
-                <div className="bd-main">
+                <div className="layout__main">
                     <Header />
                     Area area area area area area area area area area area area
                     area

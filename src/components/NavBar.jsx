@@ -27,7 +27,7 @@ export const NavBar = () => {
               </button>
               <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                   <div className="navbar-nav">
-                      <a className="nav-link active" aria-current="page" href="#">
+                      <a className="nav-link" aria-current="page" href="#">
                           Home
                       </a>
                       <a className="nav-link" href="#">
@@ -36,7 +36,7 @@ export const NavBar = () => {
                       <a className="nav-link" href="#">
                           Pricing
                       </a>
-                      <a className="nav-link disabled">Disabled</a>
+                      <a className="nav-link">Disabled</a>
                   </div>
               </div>
           </div>

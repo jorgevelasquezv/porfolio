@@ -16,9 +16,13 @@
 .sidebar__link {
     text-decoration: none;
     color: $white;
-    font-family: 'Bungee', cursive;
+    font-family: 'Chango', cursive;
     font-size: 1.5rem;
     line-height: 5.5rem;
+    
+    @include sm {
+        font-size: 1rem;    
+    }
 }
 
 .sidebar__link:hover{

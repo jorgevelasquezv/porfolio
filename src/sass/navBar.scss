@@ -1,8 +1,16 @@
 .navbar {
     display: none;
+    font-family: 'Chango', cursive;
+    .navbar-brand:hover{
+        color: $primary;
+    }
     .navbar-toggler {
         border-radius: 50%;
     }
+    .nav-link:hover{
+        color: $primary !important;
+    }
+
     @include lt-sm {
         display: block;
         position: sticky;
